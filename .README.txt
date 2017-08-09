@@ -1,0 +1,66 @@
+REACT DEVKIT : SETUP WITH YARN
+
+COMMANDS:
+Install:
+$ yarn init
+
+//dependencies
+$ yarn add react react-dom --save
+
+//devDependencies
+$ yarn add -D babel-core
+$ yarn add -D babel-loader
+$ yarn add -D babel-preset-env
+$ yarn add -D babel-preset-react
+$ yarn add -D webpack
+$ yarn add -D webpack-dev-server
+$ yarn add -D html-webpack-plugin
+$ yarn add -D style-loader
+$ yarn add -D css-loader
+$ yarn add -D sass-loader node-sass
+
+Install all devDependencies:
+$ yarn add -D babel-core babel-loader babel-preset-env babel-preset-react webpack webpack-dev-server html-webpack-plugin style-loader css-loader sass-loader node-sass
+
+
+Run:
+$ webpack ./src/app.js ./dist/app.bundle.js
+$ webpack ./src/app.js ./dist/app.bundle.js -p (minified)
+$ webpack ./src/app.js ./dist/app.bundle.js --watch (watch mode)
+
+webpack config file
+- inside package.json
+
+	"scripts": {
+ 	 "dev": "webpack-dev-server --open”,
+	 "build": "webpack -p"
+	},
+	"babel": {
+    	 "presets": [
+      	 "env",
+      	 "react"
+    	 ]
+  	},
+
+$ yarn run dev
+$ yarn run build
+
+
+
+
+
+FOLDER STRUCTURE:
+
+|
+|_/dist/
+|   |_app.bundle.js
+|   |_index.html
+|
+|_/src/
+|   |_app.js
+|   |_app.scss
+|   |_index.html (template)
+|
+|
+|_package.json
+|_webpack.config.js
