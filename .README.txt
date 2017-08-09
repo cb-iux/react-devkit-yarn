@@ -57,9 +57,17 @@ FOLDER STRUCTURE:
 |   |_index.html
 |
 |_/src/
-|   |_app.js
-|   |_app.scss
+|   |_/images/
+|   |
+|   |_/js/
+|   |   |_App.js
+|   |
+|   |_/scss/
+|   |   |_app.scss
+|   |
 |   |_index.html (template)
+|   |_index.js
+|
 |
 |
 |_package.json
